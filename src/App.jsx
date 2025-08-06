@@ -1,27 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from './components/Navbar'
+import Section from './components/Section'
+import { content } from './data/content'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+      <main className="max-w-7xl mx-auto p-4 space-y-16">
+        <Section id="proyectos" title="Proyectos" items={content.proyectos} />
+        <Section id="laboratorios" title="Laboratorios" items={content.laboratorios} />
+        <Section id="casos" title="Casos de Estudio" items={content.casos} />
+        <Section id="talleres" title="Talleres" items={content.talleres} />
+      </main>
     </>
   )
 }
