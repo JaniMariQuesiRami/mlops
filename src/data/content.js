@@ -5,6 +5,12 @@ export const content = {
       description: 'Descripción del proyecto 1',
       technologies: ['React', 'Tailwind'],
       link: '#'
+    },
+    {
+      title: 'Proyecto 2',
+      description: 'Descripción del proyecto 2',
+      technologies: ['React', 'Tailwind', 'Python'],
+      link: '#'
     }
   ],
   laboratorios: [
